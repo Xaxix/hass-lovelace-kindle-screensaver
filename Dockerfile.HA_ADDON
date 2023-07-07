@@ -18,6 +18,7 @@ RUN apk add --no-cache \
 ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true \
     PUPPETEER_EXECUTABLE_PATH=/usr/bin/chromium-browser \
     USE_IMAGE_MAGICK=true
+    UNSAFE_IGNORE_CERTIFICATE_ERRORS=true
 
 COPY package*.json ./
 COPY local.conf /etc/fonts/local.conf
