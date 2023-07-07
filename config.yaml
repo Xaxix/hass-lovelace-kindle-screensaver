@@ -36,6 +36,7 @@ options:
   GRAYSCALE_DEPTH: '8'
   COLOR_MODE: 'GrayScale'
   HA_BATTERY_WEBHOOK: ''
+  UNSAFE_IGNORE_CERTIFICATE_ERRORS: 'false'
 schema:
   HA_BASE_URL: "url"
   HA_SCREENSHOT_URL: "str"
@@ -51,6 +52,6 @@ schema:
   GRAYSCALE_DEPTH: "int"
   COLOR_MODE: "list(GrayScale|TrueColor)?"
   HA_BATTERY_WEBHOOK: "str"
+  UNSAFE_IGNORE_CERTIFICATE_ERRORS: "bool"
 environment:
   output_path: "/output/cover.png"
-  UNSAFE_IGNORE_CERTIFICATE_ERRORS: "true"
